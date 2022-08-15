@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ayun.stdemo.mapper.TopicMapper">
+    <select id="getTopicRandListById" resultType="com.ayun.stdemo.entity.Topic">
+        select * from zgjys where id = #{id}
+    </select>
+
+    <select id="getTopicById" resultType="com.ayun.stdemo.entity.Topic">
+        select * from zgjys where id = #{id}
+    </select>
+
+    <select id="getTopicList" resultType="com.ayun.stdemo.entity.Topic">
+        select * from zgjys
+    </select>
+</mapper>
